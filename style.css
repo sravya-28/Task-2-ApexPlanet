@@ -1,0 +1,80 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Vibrant Gradient */
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+ 
+form, .login-form, .todo-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input {
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+input, button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #ff7e5f;
+    color: white;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+button:hover {
+    background-color: #feb47b;
+    cursor: pointer;
+}
+ 
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+#taskList li {
+    background: #4CAF50;
+    color: white;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#taskList li:hover {
+    background: #45a049;
+    cursor: pointer;
+}
+
+ 
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+}
